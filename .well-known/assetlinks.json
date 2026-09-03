@@ -1,1 +1,11 @@
 
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "app.netlify.obj_detect_ia.twa",
+    "sha256_cert_fingerprints": [
+      "E3:7D:6D:C5:E7:B3:52:13:D4:72:D7:08:C7:AB:F1:1C:AF:28:7C:2A:4C:88:15:97:BA:26:2D:DD:F8:BE:D7:63"
+    ]
+  }
+}]
