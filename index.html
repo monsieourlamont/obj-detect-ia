@@ -20,7 +20,7 @@
 <div class="page-content">
 
 <nav class="navbar">
-  <div class="logo">OBJ<span>::</span>DETECT<span> v1.0</span></div>
+  <div class="logo">OBJ<span>::</span>DETECT<span> v1.2</span></div>
   <div class="nav-status">
     <span class="dot" id="navDot"></span>
     <span id="navStatusLabel">INICIALIZANDO</span>
@@ -31,10 +31,12 @@
   <header class="hero">
     <h1><span class="bracket">[</span> Detector de Objetos en Tiempo Real <span class="bracket">]</span></h1>
     <p class="lede">
-      Esta herramienta usa <strong>visión por computador</strong> directamente en tu navegador: un modelo de IA
-      (COCO-SSD sobre TensorFlow.js) analiza cada fotograma de tu cámara y reconoce hasta 80 tipos de objetos
-      &mdash;personas, animales, vehículos, muebles y más&mdash;, dibujando un cuadro alrededor de cada uno con
-      su nombre y nivel de confianza. Todo el procesamiento ocurre en tu dispositivo: ninguna imagen se envía a un servidor.
+      Esta herramienta usa <strong>visión por computador</strong> directamente en tu navegador: un modelo
+      <strong>YOLO26n</strong> (la versión más reciente y eficiente de YOLO) analiza cada fotograma de tu cámara
+      y reconoce hasta <strong>80 tipos de objetos</strong> &mdash;personas, animales, vehículos, muebles, comida y más&mdash;,
+      dibujando un cuadro alrededor de cada uno con su nombre y nivel de confianza.
+      YOLO26 es más preciso y más rápido que generaciones anteriores, y todo el procesamiento ocurre en tu dispositivo:
+      ninguna imagen se envía a un servidor.
     </p>
   </header>
 
@@ -68,15 +70,16 @@
 </main>
 
 <footer>
-  <div class="prompt">contact --gmail <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jgranados@iedolivossantamarta.edu.co">jgranados@iedolivossantamarta.edu.co</a></div>
+  <div class="prompt">contact --gmail <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jgranados@iedolivossantamarta.edu.co" target="_blank" rel="noopener">jgranados@iedolivossantamarta.edu.co</a></div>
 </footer>
 
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.10.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+<!-- ONNX Runtime Web -->
+<script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.19.0/dist/ort.min.js"></script>
 
-<script src="script.js"></script>
+<script src="animations.js"></script>
+<script src="detection.js"></script>
 <script>
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/pwabuilder-sw.js')
