@@ -2,10 +2,9 @@
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
     "namespace": "android_app",
-    "package_name": "https://obj-detect-ia.vercel.app/",
+    "package_name": "app.vercel.obj_detect_ia.twa",
     "sha256_cert_fingerprints": [
-      "E3:7D:6D:C5:E7:B3:52:13:D4:72:D7:08:C7:AB:F1:1C:AF:28:7C:2A:4C:88:15:97:BA:26:2D:DD:F8:BE:D7:63",
-      "1E:C6:23:23:62:84:41:4E:90:6A:AD:24:FE:63:5C:AA:A3:19:F5:42:84:85:0C:32:14:FF:E8:8A:21:B8:CF:CF"
+      "1B:6C:88:9C:34:97:BF:E8:24:3A:D7:BF:C7:A5:FA:65:B0:AD:FF:07:0B:E8:D3:4E:D2:A1:ED:C7:9A:FA:E8:41"
     ]
   }
 }]
